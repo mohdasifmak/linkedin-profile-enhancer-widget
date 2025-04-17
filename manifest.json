@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Profile Enhancer Widget",
+    "version": "1.0",
+    "description": "Injects a widget with company info into LinkedIn profiles.",
+    "permissions": ["storage"],
+    "host_permissions": ["https://www.linkedin.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/in/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ]
+  }
+  
